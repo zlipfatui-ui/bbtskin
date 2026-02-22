@@ -63,7 +63,7 @@ A high-performance custom skin manager mod for Minecraft 1.20.1 (Fabric), featur
 
 ```bash
 # Clone the repository
-git clone https://github.com/beforebedtime/bbtskin.git
+git clone https://github.com/zlipfatui-ui/bbtskin
 cd bbtskin
 
 # Build with Gradle
@@ -153,7 +153,6 @@ BBTSkin integrates with Cloudflare Workers KV for persistent cloud storage. The 
 
 ## Credits
 
-- Inspired by [NEXSkins](https://nexora-project.net/) and [FragmentSkin](https://modrinth.com/mod/fragmentskin)
 - UI design influenced by modern glass-morphism trends
 - BeforeBedtime Network community
 
