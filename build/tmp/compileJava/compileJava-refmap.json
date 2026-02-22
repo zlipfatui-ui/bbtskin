@@ -1,0 +1,24 @@
+{
+  "mappings": {
+    "com/bbt/skin/mixin/AbstractClientPlayerMixin": {
+      "getSkinTextureLocation": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108560_()Lnet/minecraft/resources/ResourceLocation;",
+      "getModelName": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108564_()Ljava/lang/String;"
+    },
+    "com/bbt/skin/mixin/PlayerInfoMixin": {
+      "getModelName": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105336_()Ljava/lang/String;",
+      "getSkinLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105337_()Lnet/minecraft/resources/ResourceLocation;"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/bbt/skin/mixin/AbstractClientPlayerMixin": {
+        "getSkinTextureLocation": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108560_()Lnet/minecraft/resources/ResourceLocation;",
+        "getModelName": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108564_()Ljava/lang/String;"
+      },
+      "com/bbt/skin/mixin/PlayerInfoMixin": {
+        "getModelName": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105336_()Ljava/lang/String;",
+        "getSkinLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105337_()Lnet/minecraft/resources/ResourceLocation;"
+      }
+    }
+  }
+}

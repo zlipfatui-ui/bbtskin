@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+issueTrackerURL = "https://beforebedtime.net/support"
+
+[[mods]]
+modId = "bbtskin"
+version = "1.3.0"
+displayName = "BBTSkin"
+updateJSONURL = "https://beforebedtime.net/api/mods/bbtskin/updates.json"
+displayURL = "https://beforebedtime.net/"
+logoFile = "assets/bbtskin/icon.png"
+credits = "BeforeBedtime Network Team"
+authors = "BeforeBedtime Team"
+description = '''Custom skin manager with Plasmo Voice integration for mouth animation, high-res texture support, local presets, and Cloudflare Worker KV synchronization.'''
+
+[[dependencies.bbtskin]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bbtskin]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bbtskin]]
+modId = "bbtlibs"
+mandatory = false
+versionRange = "[1.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

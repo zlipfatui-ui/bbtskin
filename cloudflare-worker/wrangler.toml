@@ -1,0 +1,35 @@
+# BBTSkin Cloudflare Worker Configuration
+# 
+# Setup Steps:
+# 1. Install wrangler: npm install -g wrangler
+# 2. Login: wrangler login
+# 3. Create KV namespace: wrangler kv:namespace create "BBTSKIN_SKINS"
+# 4. Update the kv_namespaces id below with the ID from step 3
+# 5. Set API key secret: wrangler secret put API_KEY
+# 6. Deploy: wrangler deploy
+
+name = "bbtskin-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Custom domain - set this up in Cloudflare dashboard
+# routes = [
+#   { pattern = "api.beforebedtime.net/*", zone_name = "beforebedtime.net" }
+# ]
+
+# KV Namespaces - create with: wrangler kv:namespace create "BBTSKIN_SKINS"
+# Replace the id with the one you get from the command above
+kv_namespaces = [
+  { binding = "BBTSKIN_SKINS", id = "YOUR_KV_NAMESPACE_ID_HERE" }
+]
+
+# Environment variables (non-secret)
+[vars]
+ENVIRONMENT = "production"
+
+# For development
+[env.dev]
+name = "bbtskin-api-dev"
+kv_namespaces = [
+  { binding = "BBTSKIN_SKINS", id = "YOUR_DEV_KV_NAMESPACE_ID_HERE" }
+]
